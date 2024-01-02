@@ -13,7 +13,13 @@ export default function RootLayout({ children }) {
       </head>
 
       <body>
-        {children}
+        <div className='main'>
+          <div className='gradient' />
+        </div>
+
+        <main className='app'>
+          {children}
+        </main>
       </body>
     </html>
   )
