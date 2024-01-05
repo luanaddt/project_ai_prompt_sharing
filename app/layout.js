@@ -1,4 +1,5 @@
 import './globals.css'
+import { Navbar, Provider } from '@/components'
 
 export const metadata = {
   title: 'Promptopia',
@@ -13,13 +14,16 @@ export default function RootLayout({ children }) {
       </head>
 
       <body>
-        <div className='main'>
-          <div className='gradient' />
-        </div>
+        <Provider>
+          <div className='main'>
+            <div className='gradient' />
+          </div>
 
-        <main className='app'>
-          {children}
-        </main>
+          <main className='app'>
+            <Navbar />
+            {children}
+          </main>
+        </Provider>
       </body>
     </html>
   )
