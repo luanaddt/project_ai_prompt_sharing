@@ -4,6 +4,7 @@ import Provider from "./Provider";
 import Form from "./Form";
 import PromptCardList from "./PromptCardList"
 import PromptCard from "./PromptCard";
+import Profile from "./Profile";
 
 export {
     Feed,
@@ -11,5 +12,6 @@ export {
     Provider,
     Form,
     PromptCardList,
-    PromptCard
+    PromptCard,
+    Profile
 }
